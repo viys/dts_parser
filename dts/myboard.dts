@@ -1,0 +1,25 @@
+/ {
+    uart0: uart {
+        name   = "uart0";
+        tx-pin = GPIO1;
+        rx-pin = GPIO2;
+        baudrate = <115200>;
+    };
+    
+    i2c0: i2c {
+        sda-pin = GPIO3;
+        scl-pin = GPIO4;
+    };
+
+    i2c1: i2c {
+        sda-pin = GPIO5;
+        scl-pin = GPIO6;
+    };
+
+    uart1: uart {
+        name   = "uart1";
+        tx-pin = GPIO7;
+        rx-pin = GPIO8;
+        baudrate = <921600>;
+    };
+};
